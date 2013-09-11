@@ -1,0 +1,9 @@
+1. python -m SimpleHTTPServer
+2. Hit "Add 20 Records"
+3. Hit Push // 20 _revs_diff POSTs are made, as expected
+4. Hit Push // no _revs_diff POSTs are made, as expected
+5. Hit Delete An Item
+6. Hit Push // 1 _revs_diff POST is made, as expected
+7. Hit Delete An Item
+8. Hit Push // 2 _revs_diff POSTs are made, which shouldn't be.
+9. Repeat steps 7 and 8 as desired.
